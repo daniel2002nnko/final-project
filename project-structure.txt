@@ -1,0 +1,51 @@
+hostel-management-system/
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── custom.css
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── validation.js
+│   │   └── dashboard.js
+│   ├── images/
+│   └── uploads/
+│       └── payments/
+├── config/
+│   └── database.php
+├── includes/
+│   ├── header.php
+│   ├── footer.php
+│   ├── navbar.php
+│   └── functions.php
+├── pages/
+│   ├── admin/
+│   │   ├── dashboard.php
+│   │   ├── students.php
+│   │   ├── verify-payments.php
+│   │   ├── equipment.php
+│   │   ├── mattress.php
+│   │   ├── maintenance.php
+│   │   ├── manage-users.php
+│   │   └── reports.php
+│   ├── student/
+│   │   ├── dashboard.php
+│   │   ├── profile.php
+│   │   ├── payments.php
+│   │   └── equipment.php
+│   └── block-manager/
+│       ├── dashboard.php
+│       └── maintenance.php
+├── auth/
+│   ├── login.php
+│   ├── register.php
+│   ├── logout.php
+│   └── reset-password.php
+├── api/
+│   ├── students.php
+│   ├── rooms.php
+│   ├── payments.php
+│   └── maintenance.php
+├── database/
+│   └── hostel_db.sql
+├── index.php
+└── README.md
