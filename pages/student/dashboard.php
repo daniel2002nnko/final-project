@@ -20,6 +20,14 @@ $stmt->execute();
 $result = $stmt->get_result();
 $student = $result->fetch_assoc();
 
+// Check if student record exists
+if (!$student) {
+    // Handle the case where student record doesn't exist
+    $_SESSION['error'] = "Student record not found. Please contact administration.";
+    redirect("/JESUS/auth/logout.php");
+    exit;
+}
+
 // Get equipment status
 $sql = "SELECT * FROM equipment WHERE student_id = ?";
 $stmt = $conn->prepare($sql);
@@ -289,4 +297,5 @@ if (!$equipment) {
 </div>
 
 <?php include '../../includes/footer.php'; ?>
+
 

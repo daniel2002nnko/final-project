@@ -1,8 +1,3 @@
-<?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,5 +10,42 @@ if (session_status() === PHP_SESSION_NONE) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link rel="shortcut icon" href="https://www.dit.ac.tz/upload/dit.ico" type="image/x-icon">
+    
+    <!-- Global CSS Variables for Purple Theme -->
+    <style>
+        :root {
+            --primary-color:rgb(93, 10, 145);
+            --secondary-color: #9c27b0;
+            --accent-color: #ce93d8;
+            --light-color: #f3e5f5;
+            --dark-color: #4a148c;
+        }
+        
+        .bg-primary {
+            background-color: var(--primary-color) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark-color);
+            border-color: var(--dark-color);
+        }
+        
+        .text-primary {
+            color: var(--primary-color) !important;
+        }
+        
+        /* Additional styling for navbar */
+        .navbar-dark {
+            background: linear-gradient(135deg, var(--primary-color), var(--dark-color)) !important;
+        }
+    </style>
 </head>
 <body>
+
